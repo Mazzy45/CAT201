@@ -1,0 +1,116 @@
+/* General Styles */
+.details-container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.7; /* Increased for better text spacing */
+    color: #333; /* Softer color for readability */
+}
+
+.slider {
+    position: relative;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.slider-image, .video-container {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.slider-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.6); /* Slightly darker for better contrast */
+    color: white;
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 5px; /* Rounded corners for smoother look */
+    z-index: 1;
+}
+
+.slider-button:nth-of-type(1) {
+    left: 10px;
+}
+
+.slider-button:nth-of-type(2) {
+    right: 10px;
+}
+
+.details {
+    margin-top: 20px;
+}
+
+.description {
+    font-size: 18px;
+    margin-bottom: 15px; /* Added spacing below description */
+    line-height: 1.8; /* Improved line spacing */
+    text-align: justify; /* Align text for cleaner appearance */
+}
+
+.info-list {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 15px; /* Added space above list for separation */
+}
+
+.info-list li {
+    font-size: 16px;
+    margin: 8px 0; /* Reduced margin for compact but neat layout */
+}
+
+/* Styling specific details */
+.info-list li span {
+    font-weight: bold; /* Highlight key details */
+}
+
+a {
+    color: #007bff; /* Use a consistent blue for links */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+    .details-container {
+        width: 95%;
+        padding: 15px;
+    }
+
+    .slider-button {
+        font-size: 24px;
+        padding: 8px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+
+    .info-list li {
+        font-size: 14px;
+    }
+}
+
+/* For very small screens like mobile phones in portrait mode */
+@media (max-width: 480px) {
+    .slider-button {
+        font-size: 20px;
+        padding: 5px;
+    }
+
+    .description {
+        font-size: 14px;
+    }
+
+    .info-list li {
+        font-size: 12px;
+    }
+}

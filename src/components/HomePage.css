@@ -1,0 +1,118 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.homepage-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header styles */
+.homepage-header {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-title {
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+.nav-links a {
+    margin: 0 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.nav-links a:hover {
+    text-decoration: underline;
+}
+
+/* Section title */
+.section-title {
+    text-align: center;
+    margin: 20px 0;
+    font-size: 2rem;
+    color: #333;
+}
+
+/* Spots list styles */
+.spots-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.spot-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.spot-card:hover {
+    transform: translateY(-5px);
+}
+
+.spot-image {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.spot-info {
+    padding: 15px;
+}
+
+.spot-title {
+    font-size: 1.2rem;
+    color: #007bff;
+    margin: 10px 0;
+}
+
+.spot-description {
+    font-size: 0.9rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.learn-more-button {
+    display: inline-block;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9rem;
+    transition: background-color 0.3s;
+}
+
+.learn-more-button:hover {
+    background-color: #0056b3;
+}
+
+/* Footer styles */
+.homepage-footer {
+    text-align: center;
+    background-color: #343a40;
+    color: white;
+    padding: 10px 0;
+    margin-top: auto;
+}
