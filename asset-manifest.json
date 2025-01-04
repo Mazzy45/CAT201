@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/VisitPenang/static/css/main.97f95429.css",
+    "main.js": "/VisitPenang/static/js/main.1541d891.js",
+    "index.html": "/VisitPenang/index.html",
+    "main.97f95429.css.map": "/VisitPenang/static/css/main.97f95429.css.map",
+    "main.1541d891.js.map": "/VisitPenang/static/js/main.1541d891.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.97f95429.css",
+    "static/js/main.1541d891.js"
+  ]
+}
