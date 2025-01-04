@@ -2,7 +2,7 @@
   "name": "touristspots",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://Mazzy45.github.io/VisitPenang",
+  "homepage": "https://Mazzy45.github.io/touristspots",
   "dependencies": {
     "cors": "^2.8.5",
     "cra-template": "1.2.0",
