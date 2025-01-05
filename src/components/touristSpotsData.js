@@ -84,31 +84,53 @@ export const topTouristSpots = [
     {
         id: 'penang-street-art',
         name: 'Penang Street Art',
-        image: 'images/street-art-1.jpg',
+        image: 'images/street-art-1.jpeg',
         images: [
             'images/street-art-1.jpg',
             'images/street-art-2.jpg',
-            'images/street-art-3.jpg',
+            'images/street-art-3.jpg'
         ],
-        shortDescription: 'A collection of famous street art murals across George Town.',
-        description: 'Penang Street Art is an open-air gallery located in George Town, where visitors can admire creative murals that depict Penang’s history and culture.',
-        ticketInfo: 'Free entry',
-        openingHours: 'Available 24/7',
-        activities: 'Explore murals, photography, and cultural sightseeing.',
+        shortDescription: 'Discover Penang’s vibrant street art, an iconic blend of murals and sculptures that brings Georgetown’s heritage to life.',
+        longDescription: {
+            paragraph1: 'Penang Street Art transforms Georgetown into a living canvas, combining creativity with culture. Featuring renowned murals like "Boy on a Motorbike" and "Little Boy & Pet Dinosaur," the artworks were created by international and local artists, making each alley a colorful journey through Penang’s history.',
+            paragraph2: 'Iron sculptures also line the streets, humorously narrating local tales. With interactive maps available, you can explore designated routes to enjoy the artwork. Don’t miss the rich cultural ambiance, delicious street food, and scenic landmarks while immersing yourself in Penang’s artistic charm.'
+        },
+        ticketInfo: [
+            'Free exploration.',
+            'Guided tours may vary in price.',
+        ],
+        operatingDays: 'Open Daily',
+        operatingHours: 'Accessible 24 Hours',
+        contactNumber: 'mail@streetartpenang.com',
+        address: 'Georgetown, Penang, Malaysia',
+        video: '',
+        videoCredit: '',
+        websiteLink: 'https://www.streetartpenang.com'
     },
     {
         id: 'batu-ferringhi',
         name: 'Batu Ferringhi',
-        image: 'images/batu-ferringhi.jpg',
+        image: 'images/batu-ferringhi-1.jpeg',
         images: [
-            'images/batu-ferringhi.jpg',
-            'images/batu-ferringhi2.jpg',
-            'images/batu-ferringhi3.jpg',
+            'images/batu-ferringhi-1.jpg',
+            'images/batu-ferringhi-2.jpg',
+            'images/batu-ferringhi-3.jpg'
         ],
-        shortDescription: 'A popular beach destination with water sports and nightlife.',
-        description: 'Batu Ferringhi is a famous beach destination known for its beautiful sandy shores, water sports activities, and vibrant nightlife along the beach.',
-        ticketInfo: 'Free entry',
-        openingHours: 'Available 24/7',
-        activities: 'Water sports, beach activities, and night market exploration.',
+        shortDescription: 'Relax at Batu Ferringhi, a popular beach destination in Penang known for its sandy shores, vibrant night market, and thrilling water sports.',
+        longDescription: {
+            paragraph1: 'Batu Ferringhi offers a perfect blend of relaxation and adventure with its stunning coastline and variety of activities. From parasailing and jet skiing to enjoying local seafood by the beach, it is a must-visit for both locals and tourists.',
+            paragraph2: 'In the evening, the Batu Ferringhi night market comes alive, featuring local crafts, souvenirs, and street food. The picturesque sunset views and lively atmosphere make it an ideal spot for a memorable beach experience.'
+        },
+        ticketInfo: [
+            'Beach access is free.',
+            'Water sports and other activities are available for a fee.',
+        ],
+        operatingDays: 'Open Daily',
+        operatingHours: 'Accessible 24 Hours (water sports activities vary by operator)',
+        contactNumber: '',
+        address: 'Batu Ferringhi, Penang, Malaysia',
+        video: '',
+        videoCredit: '',
+        websiteLink: ''
     },
 ];
