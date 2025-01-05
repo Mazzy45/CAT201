@@ -18,7 +18,7 @@ const HomePage = () => {
             </header>
 
             <main>
-                <h2 className="section-title">Top 10 Tourist Attractions in Penang</h2>
+                <h2 className="section-title">Top 5 Tourist Attractions in Penang</h2>
                 <div className="spots-list">
                     {topTouristSpots.map((spot) => (
                         <div key={spot.id} className="spot-card">

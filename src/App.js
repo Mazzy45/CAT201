@@ -5,7 +5,7 @@ import DetailsPage from './components/DetailsPage';
 
 function App() {
     return (
-        <Router basename="/touristspots"> {/* Add basename here */}
+        <Router> {/* Removed basename */}
             <Routes>
                 <Route path="/" element={<HomePage />} />
                 <Route path="/touristspots/:id" element={<DetailsPage />} />

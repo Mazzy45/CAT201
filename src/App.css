@@ -1,6 +1,6 @@
 /* Global background for the entire website */
 body {
-  background: url('/touristspots/images/background.jpg') no-repeat center center fixed;
+  background: url('/touristspots/public/images/background.jpg') no-repeat center center fixed;
   background-size: cover; /* Cover the entire viewport */
   font-family: 'Roboto', sans-serif;
   color: #333;

@@ -1,19 +1,21 @@
 /* General styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Roboto, sans-serif;
     margin: 0;
     padding: 0;
+    box-sizing: border-box; /* Ensure elements do not overflow */
 }
 
 .homepage-container {
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100vh; /* Ensure the container takes up the full viewport height */
+    justify-content: space-between; /* Space between header, content, and footer */
 }
 
 /* Header styles */
 .homepage-header {
-    background-color: #007bff;
+    background-color: #228b22;
     color: white;
     padding: 10px 20px;
     display: flex;
@@ -24,6 +26,12 @@ body {
 .header-title {
     font-size: 1.8rem;
     margin: 0;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
 }
 
 .nav-links a {
@@ -47,20 +55,24 @@ body {
 
 /* Spots list styles */
 .spots-list {
+    padding: 20px;
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Allow items to wrap */
     justify-content: center;
     gap: 20px;
-    padding: 20px;
 }
 
+/* Spot card layout */
 .spot-card {
     background-color: white;
     border: 1px solid #ddd;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 300px;
-    text-align: center;
+    width: 60%; /* Default card width */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px;
+    display: flex; /* Flexbox layout for side-by-side image and content */
+    flex-direction: row; /* Image on the left, content on the right */
     transition: transform 0.3s;
 }
 
@@ -68,21 +80,25 @@ body {
     transform: translateY(-5px);
 }
 
+/* Spot image styles */
 .spot-image {
-    width: 100%;
+    width: 200px; /* Fixed image width */
     height: 180px;
     object-fit: cover;
     border-top-left-radius: 8px;
     border-top-right-radius: 8px;
+    margin: 20px 15px;
 }
 
+/* Spot info (name, description, button) */
 .spot-info {
     padding: 15px;
+    flex: 1; /* Allow content to take up remaining space */
 }
 
 .spot-title {
     font-size: 1.2rem;
-    color: #007bff;
+    color: #228b22;
     margin: 10px 0;
 }
 
@@ -94,7 +110,7 @@ body {
 
 .learn-more-button {
     display: inline-block;
-    background-color: #007bff;
+    background-color: #228b22;
     color: white;
     text-decoration: none;
     padding: 10px 15px;
@@ -104,14 +120,65 @@ body {
 }
 
 .learn-more-button:hover {
-    background-color: #0056b3;
+    background-color: #33d633;
 }
 
 /* Footer styles */
 .homepage-footer {
     text-align: center;
-    background-color: #343a40;
+    background-color: #228b22;
     color: white;
     padding: 10px 0;
-    margin-top: auto;
+    margin-top: auto; /* Ensure footer stays at the bottom */
+}
+
+/* Responsive Design for Mobile (max-width: 600px) */
+@media (max-width: 600px) {
+    .spot-card {
+        width: 100%; /* Cards take full width */
+        flex-direction: column; /* Stack image and content vertically */
+    }
+
+    .spot-image {
+        width: 100%; /* Make image full width */
+        height: auto; /* Adjust height based on aspect ratio */
+        margin: 0;
+    }
+
+    .homepage-header {
+        flex-direction: column; /* Stack header content vertically */
+        text-align: center;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-direction: column; /* Stack navigation links vertically */
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+/* Responsive Design for Tablet (min-width: 601px and max-width: 1024px) */
+@media (min-width: 601px) and (max-width: 1024px) {
+    .spot-card {
+        width: 80%; /* Make the cards take up 80% of the width */
+        flex-direction: row; /* Keep image and content side-by-side */
+    }
+
+    .homepage-header {
+        flex-direction: row;
+        justify-content: space-between; /* Keep header content in row for tablets */
+    }
+
+    .nav-links {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+/* Responsive Design for Desktop (min-width: 1025px) */
+@media (min-width: 1025px) {
+    .spot-card {
+        width: 60%; /* Cards take up 60% of the width */
+    }
 }

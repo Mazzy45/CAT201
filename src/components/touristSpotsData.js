@@ -2,7 +2,7 @@ export const topTouristSpots = [
     {
         id: 'escape',
         name: 'ESCAPE Penang',
-        image: '/touristspots/images/escape-1.jpg',
+        image: '/images/escape-1.jpg',
         images: [
             '/touristspots/images/escape-1.jpg',
             '/touristspots/images/escape-2.jpg',
@@ -34,7 +34,7 @@ export const topTouristSpots = [
     {
         id: 'penang-hill',
         name: 'Penang Hill',
-        image: '/touristspots/images/penang-hill-1.jpg',
+        image: '/images/penang-hill-1.jpg',
         images: [
             '/touristspots/images/penang-hill-1.jpg',
             '/touristspots/images/penang-hill-2.jpeg',
