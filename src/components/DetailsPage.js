@@ -41,7 +41,7 @@ const DetailsPage = () => {
                 </button>
 
                 <img
-                    src={`/${sliderContent[currentImageIndex]}`}
+                    src={sliderContent[currentImageIndex]}
                     alt={`Slide ${currentImageIndex + 1}`}
                     className="slider-image"
                 />
