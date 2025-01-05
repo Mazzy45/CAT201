@@ -23,7 +23,7 @@ const HomePage = () => {
                     {topTouristSpots.map((spot) => (
                         <div key={spot.id} className="spot-card">
                             <img
-                                src={`/images/${spot.image}`}
+                                src={spot.image}
                                 alt={spot.name}
                                 className="spot-image"
                             />
