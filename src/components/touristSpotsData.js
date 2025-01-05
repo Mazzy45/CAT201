@@ -8,6 +8,11 @@ export const topTouristSpots = [
             '/images/escape-2.jpg',
             '/images/escape-3.jpg',
             '/images/escape-4.jpg',
+            '/images/escape-5.jpeg',
+            '/images/escape-6.jpg',
+            '/images/escape-7.jpg',
+            '/images/escape-8.jpeg',
+            '/images/escape-9.jpeg',
         ],
         shortDescription: 'Fun destination with exciting rides and games hosted in a natural environment.',
         longDescription: {
@@ -24,18 +29,22 @@ export const topTouristSpots = [
         operatingHours: '10:00 AM - 6:00 PM',
         contactNumber: '017-797 7529 (WhatsApp only)',
         address: '828 Jalan Teluk Bahang, Teluk Bahang, 11050 Tanjung Bungah, Pulau Pinang, Malaysia',
-        video: '/videos/escape-video.mp4',
-        videoCredit: 'Video credit: Adventure Vibes',
         websiteLink: 'https://www.escape.my/pg',
     },
     {
         id: 'penang-hill',
         name: 'Penang Hill',
-        image: 'images/penang-hill-1.jpeg',
+        image: '/images/penang-hill-1.jpeg',
         images: [
-            'images/penang-hill-1.jpg',
-            'images/penang-hill-2.jpg',
-            'images/penang-hill-3.jpg',
+            '/images/penang-hill-1.jpg',
+            '/images/penang-hill-2.jpeg',
+            '/images/penang-hill-3.jpg',
+            '/images/penang-hill-4.jpeg',
+            '/images/penang-hill-5.jpeg',
+            '/images/penang-hill-6.jpeg',
+            '/images/penang-hill-7.jpeg',
+            '/images/penang-hill-8.jpeg',
+            '/images/penang-hill-9.jpeg',
         ],
         shortDescription: 'Penang Hill offers breathtaking views and a rich cultural experience, making it a popular spot for nature lovers.',
         longDescription: {
@@ -49,18 +58,20 @@ export const topTouristSpots = [
         operatingHours: '06:15 AM - 07:45 PM',
         contactNumber: '04-828 8880 ',
         address: 'Bukit Bendera, Jalan Stesen, 11500 Ayer Itam, Pulau Pinang, Malaysia',
-        video: '',
-        videoCredit: '',
         websiteLink: 'https://www.penanghill.gov.my/index.php/en/',
     },
     {
         id: 'pinang-peranakan-mansion',
         name: 'Pinang Peranakan Mansion',
-        image: 'images/mansion-1.jpeg',
+        image: '/images/mansion-1.jpg',
         images: [
-            'images/mansion-1.jpg',
-            'images/mansion-2.jpg',
-            'images/mansion-3.jpg'
+            '/images/mansion-1.jpg',
+            '/images/mansion-2.jpg',
+            '/images/mansion-3.jpg',
+            '/images/mansion-4.jpeg',
+            '/images/mansion-5.jpg',
+            '/images/mansion-6.jpg',
+            '/images/mansion-7.jpg',
         ],
         shortDescription: 'Step into the opulent lifestyle of the Peranakans at this grand heritage mansion filled with antiques and cultural treasures.',
         longDescription: {
@@ -77,18 +88,20 @@ export const topTouristSpots = [
         operatingHours: '09:30 AM - 05:00 PM',
         contactNumber: '04-264 2929',
         address: '29, Church Street, 10200 Penang, Malaysia',
-        video: '',
-        videoCredit: '',
         websiteLink: 'https://www.pinangperanakanmansion.com.my'
     },
     {
         id: 'penang-street-art',
         name: 'Penang Street Art',
-        image: 'images/street-art-1.jpeg',
+        image: '/images/street-art-1.jpg',
         images: [
-            'images/street-art-1.jpg',
-            'images/street-art-2.jpg',
-            'images/street-art-3.jpg'
+            '/images/street-art-1.jpg',
+            '/images/street-art-2.jpg',
+            '/images/street-art-3.jpg',
+            '/images/street-art-4.jpg',
+            '/images/street-art-5.jpg',
+            '/images/street-art-6.jpg',
+            '/images/street-art-7.jpg'
         ],
         shortDescription: 'Discover Penang’s vibrant street art, an iconic blend of murals and sculptures that brings Georgetown’s heritage to life.',
         longDescription: {
@@ -103,18 +116,21 @@ export const topTouristSpots = [
         operatingHours: 'Accessible 24 Hours',
         contactNumber: 'mail@streetartpenang.com',
         address: 'Georgetown, Penang, Malaysia',
-        video: '',
-        videoCredit: '',
         websiteLink: 'https://www.streetartpenang.com'
     },
     {
         id: 'batu-ferringhi',
         name: 'Batu Ferringhi',
-        image: 'images/batu-ferringhi-1.jpeg',
+        image: '/images/batu-ferringhi-1.jpg',
         images: [
-            'images/batu-ferringhi-1.jpg',
-            'images/batu-ferringhi-2.jpg',
-            'images/batu-ferringhi-3.jpg'
+            '/images/batu-ferringhi-1.jpg',
+            '/images/batu-ferringhi-2.jpeg',
+            '/images/batu-ferringhi-3.jpeg',
+            '/images/batu-ferringhi-4.jpg',
+            '/images/batu-ferringhi-5.jpeg',
+            '/images/batu-ferringhi-6.jpg',
+            '/images/batu-ferringhi-7.jpg',
+            '/images/batu-ferringhi-8.jpg'
         ],
         shortDescription: 'Relax at Batu Ferringhi, a popular beach destination in Penang known for its sandy shores, vibrant night market, and thrilling water sports.',
         longDescription: {
@@ -129,8 +145,6 @@ export const topTouristSpots = [
         operatingHours: 'Accessible 24 Hours (water sports activities vary by operator)',
         contactNumber: '',
         address: 'Batu Ferringhi, Penang, Malaysia',
-        video: '',
-        videoCredit: '',
         websiteLink: ''
     },
 ];

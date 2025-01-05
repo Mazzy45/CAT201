@@ -17,10 +17,7 @@ const DetailsPage = () => {
         );
     }
 
-    // If a video exists, place it at the first position, followed by the images
-    const sliderContent = touristSpot.video
-        ? [touristSpot.video, ...touristSpot.images]  // Video first, then images
-        : [...touristSpot.images];  // Only images if no video
+    const sliderContent = touristSpot.images;  // Only images, no video
 
     const handleNextImage = () => {
         setCurrentImageIndex((prevIndex) =>
@@ -43,29 +40,11 @@ const DetailsPage = () => {
                     ◀
                 </button>
 
-                {/* Render video if it's the first element, then render images */}
-                {sliderContent[currentImageIndex].endsWith('.mp4') ? (
-                    <div className="video-container">
-                        <video controls autoPlay>
-                            <source
-                                src={sliderContent[currentImageIndex]}
-                                type="video/mp4"
-                            />
-                            Your browser does not support the video tag.
-                        </video>
-                        {touristSpot.videoCredit && (
-                            <div className="video-credit">
-                                <p>{touristSpot.videoCredit}</p>
-                            </div>
-                        )}
-                    </div>
-                ) : (
-                    <img
-                        src={sliderContent[currentImageIndex]}
-                        alt={`Slide ${currentImageIndex + 1}`}
-                        className="slider-image"
-                    />
-                )}
+                <img
+                    src={sliderContent[currentImageIndex]}
+                    alt={`Slide ${currentImageIndex + 1}`}
+                    className="slider-image"
+                />
 
                 <button onClick={handleNextImage} className="slider-button">
                     ▶
@@ -73,11 +52,9 @@ const DetailsPage = () => {
             </div>
 
             <div className="details">
-                {/* Render description as two paragraphs */}
                 <p className="description">{touristSpot.longDescription.paragraph1}</p>
                 <p className="description">{touristSpot.longDescription.paragraph2}</p>
 
-                {/* New Details Section without Activities */}
                 <ul className="info-list">
                     <li><strong>Ticket Info:</strong></li>
                     <ul>
@@ -87,11 +64,12 @@ const DetailsPage = () => {
                     </ul>
                     <li><strong>Operating Days:</strong> {touristSpot.operatingDays}</li>
                     <li><strong>Operating Hours:</strong> {touristSpot.operatingHours}</li>
-                    <li><strong>Contact Number:</strong> {touristSpot.contactNumber}</li>
+                    {touristSpot.contactNumber && (
+                        <li><strong>Contact Number:</strong> {touristSpot.contactNumber}</li>
+                    )}
                     <li><strong>Address:</strong> {touristSpot.address}</li>
                 </ul>
 
-                {/* Website Link Section */}
                 {touristSpot.websiteLink && (
                     <div className="website-link">
                         <a href={touristSpot.websiteLink} target="_blank" rel="noopener noreferrer">
