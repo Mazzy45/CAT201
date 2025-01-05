@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.4ddcd076.css",
-    "main.js": "/static/js/main.5dab3f13.js",
-    "index.html": "/index.html",
-    "main.4ddcd076.css.map": "/static/css/main.4ddcd076.css.map",
-    "main.5dab3f13.js.map": "/static/js/main.5dab3f13.js.map"
+    "main.css": "/touristspots/static/css/main.4ddcd076.css",
+    "main.js": "/touristspots/static/js/main.5dab3f13.js",
+    "index.html": "/touristspots/index.html",
+    "main.4ddcd076.css.map": "/touristspots/static/css/main.4ddcd076.css.map",
+    "main.5dab3f13.js.map": "/touristspots/static/js/main.5dab3f13.js.map"
   },
   "entrypoints": [
     "static/css/main.4ddcd076.css",
